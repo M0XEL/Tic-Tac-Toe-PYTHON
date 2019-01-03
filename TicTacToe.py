@@ -4,7 +4,7 @@ import os
 player1_name = 'X'
 player2_name = 'O'
 current_player = player1_name
-field = []
+field = [0 for i in range(9)]
 is_singleplayer = True
 difficulty = 1
 
@@ -85,8 +85,7 @@ def startRound():
 
     global field
     for x in range(9):
-        #field[x] = '-'
-        field.append('-')
+        field[x] = '-'
 
     printField()
     turn = 0
